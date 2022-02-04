@@ -53,6 +53,9 @@ public class Variable {
 		System.out.println("\'나는 생각한다\'");
 		System.out.println("\"고로 존재한다\"");
 		System.out.println("\\");
+		
+	//	변수의 범위
+	//	변수는 선언된 블록 내에서만 사용 가능하다
 
 	}
 
