@@ -2,6 +2,7 @@ package com.mydomain.lecture.ch15;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
@@ -27,6 +28,21 @@ public class HashMapExample1 {
 		while(keyIterator.hasNext()) {
 			String key = keyIterator.next();
 			Integer value = map.get(key);
+			System.out.println("\t" + key + " : " + value);
+		}
+		System.out.println();
+		
+		Map<String, Integer> map2 = new LinkedHashMap<>();
+		
+		map2.put("강현준", 90);
+		map2.put("홍길동", 85);
+		map2.put("이순신", 80);
+		
+		Set<String> keySet2 = map2.keySet();
+		Iterator<String> keyIterator2 = keySet2.iterator();
+		while(keyIterator2.hasNext()) {
+			String key = keyIterator2.next();
+			Integer value = map2.get(key);
 			System.out.println("\t" + key + " : " + value);
 		}
 		System.out.println();
